@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Compatibility Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #ffe6e6;
+        }
+        h1 {
+            color: #ff3366;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        input {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 1px solid #ff3366;
+            font-size: 16px;
+            width: 200px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ff3366;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #e60000;
+        }
+        button:active {
+            transform: scale(0.95);
+            background-color: #b30000;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+        }
+        .hidden {
+            display: none;
+        }
+        #progressBar {
+            width: 100%;
+            background-color: #ddd;
+            height: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: none;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        #progress {
+            height: 100%;
+            width: 0;
+            background-color: #ff3366;
+            border-radius: 10px;
+            transition: width 2s ease-in-out;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+            input {
+                width: 100%;
+                margin: 10px 0;
+            }
+            button {
+                width: 100%;
+                font-size: 20px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Love Compatibility Test ❤️</h1>
+    <p>Enter your names below to check your love compatibility!</p>
+    <input type="text" id="name1" placeholder="Your Name">
+    <input type="text" id="name2" placeholder="Partner's Name">
+    <button onclick="checkLove()">Check Compatibility</button>
+    
+    <div id="progressBar" class="hidden">
+        <div id="progress"></div>
+    </div>
+    
+    <p id="result" class="hidden"></p>
+
+    <script>
+        function checkLove() {
+            let name1 = document.getElementById("name1").value.trim().toLowerCase();
+            let name2 = document.getElementById("name2").value.trim().toLowerCase();
+            let result = document.getElementById("result");
+            let progressBar = document.getElementById("progressBar");
+            let progress = document.getElementById("progress");
+            
+            if (name1 && name2) {
+                result.classList.add("hidden");
+                progressBar.classList.remove("hidden");
+                progress.style.width = "0%";
+                
+                let width = 0;
+                let interval = setInterval(() => {
+                    if (width >= 100) {
+                        clearInterval(interval);
+                        showResult(name1, name2);
+                    } else {
+                        width += 10;
+                        progress.style.width = width + "%";
+                    }
+                }, 200);
+            } else {
+                result.innerHTML = "Please enter both names!";
+                result.style.color = "black";
+                result.classList.remove("hidden");
+            }
+        }
+        
+        function showResult(name1, name2) {
+            let result = document.getElementById("result");
+            let progressBar = document.getElementById("progressBar");
+            progressBar.classList.add("hidden");
+            
+            if ((name1 === "disha" && name2 === "shivam") || (name1 === "shivam" && name2 === "disha")) {
+                result.innerHTML = `100% Lovers – Why not you guys kiss each other? 😘`;
+                result.style.color = "pink";
+                setTimeout(() => {
+                result.innerHTML = `Or why not 69❤️`;
+                result.style.color = "green";
+            }, 5000);
+            setTimeout(() => {
+                result.innerHTML = ` Or why not bdsm❤️`;
+                result.style.color = "green";
+            }, 6000);
+            setTimeout(() => {
+                result.innerHTML = `Or why not porn `;
+                result.style.color = "green";
+            }, 7000);
+            setTimeout(() => {
+                result.innerHTML = `Or why not Cumshot `;
+                result.style.color = "green";
+            }, 8000);
+            setTimeout(() => {
+                result.innerHTML = `why not some foreplay `;
+                result.style.color = "green";
+            }, 9000);
+            setTimeout(() => {
+                result.innerHTML = `why not striping together `;
+                result.style.color = "green";
+            }, 10000);
+            setTimeout(() => {
+    result.innerHTML = `Or why not deepthroat 😏`;
+    result.style.color = "green";
+}, 11000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not roleplay 🥵`;
+    result.style.color = "green";
+}, 12000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not public fun 😈`;
+    result.style.color = "green";
+}, 13000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not handcuffs 🔗`;
+    result.style.color = "green";
+}, 14000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not oil massage 💦`;
+    result.style.color = "green";
+}, 15000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not hot wax 🕯️`;
+    result.style.color = "green";
+}, 16000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not dirty talk 📞`;
+    result.style.color = "green";
+}, 17000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not a quickie 😉`;
+    result.style.color = "green";
+}, 18000);
+setTimeout(() => {
+    result.innerHTML = `Or why not missionary 😇`;
+    result.style.color = "green";
+}, 19000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not doggy style 🐶🔥`;
+    result.style.color = "green";
+}, 20000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not cowgirl 🤠💦`;
+    result.style.color = "green";
+}, 21000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not reverse cowgirl 🍑🔥`;
+    result.style.color = "green";
+}, 22000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not standing sex 🚀`;
+    result.style.color = "green";
+}, 23000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not spooning 😴🔥`;
+    result.style.color = "green";
+}, 24000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not lotus position 🌺`;
+    result.style.color = "green";
+}, 25000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not prone bone 😏`;
+    result.style.color = "green";
+}, 26000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not the wheelbarrow 🛒🔥`;
+    result.style.color = "green";
+}, 27000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not the butter churner 🧈🔥`;
+    result.style.color = "green";
+}, 28000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not the bridge 🌉🔥`;
+    result.style.color = "green";
+}, 29000);
+setTimeout(() => {
+    result.innerHTML = `Or why not rough doggy 🤤💦`;
+    result.style.color = "green";
+}, 30000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not legs over shoulders 🔥`;
+    result.style.color = "green";
+}, 31000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not deep missionary 😏💥`;
+    result.style.color = "green";
+}, 32000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not tied up & teased ⛓️🥵`;
+    result.style.color = "green";
+}, 33000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not hair pulling & choking 😈`;
+    result.style.color = "green";
+}, 34000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not pinned against the wall 🖤🔥`;
+    result.style.color = "green";
+}, 35000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not face sitting 😮‍💨🍑`;
+    result.style.color = "green";
+}, 36000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not throat full & dripping 🤯💦`;
+    result.style.color = "green";
+}, 37000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not full-body grinding 😍🔥`;
+    result.style.color = "green";
+}, 38000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not overstimulation till begging 😈💦`;
+    result.style.color = "green";
+}, 39000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not being completely dominated 😏🔗`;
+    result.style.color = "green";
+}, 40000);
+
+setTimeout(() => {
+    result.innerHTML = `Or why not the ultimate orgasm control 🔥🖤`;
+    result.style.color = "green";
+}, 41000);
+ 
+setTimeout(() => {
+    result.innerHTML = `Bas ab jao`;
+    result.style.color = "red";
+}, 41000);
+
+
+
+
+            } else if ((name1 === "disha" && name2 === "devesh") || (name1 === "devesh" && name2 === "disha")) {
+                result.innerHTML = `0% Compatibility – You guys are siblings for sure! 😱`;
+                result.style.color = "red";
+            } else if (name1 === "disha" && name2 === "krk" || name2 === "disha" && name1 === "krk") {
+                result.innerHTML = `50% - Just good friends! 😂`;
+                result.style.color = "blue";
+            } else {
+                let relations = [
+                    "Siblings! 😱", 
+                    "Long-lost Cousins! 🤯", 
+                    "Best Friends Only! 😂", 
+                    "Mortal Enemies! 😤", 
+                    "100% Soulmates! ❤️"
+                ];
+                let randomRelation = relations[Math.floor(Math.random() * relations.length)];
+                result.innerHTML = `0% Compatibility – You Are Actually ${randomRelation}`;
+                result.style.color = "red";
+            }
+            
+            result.classList.remove("hidden");
+
+            
+            
+            
+        }
+    </script>
+</body>
+</html>
