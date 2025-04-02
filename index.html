@@ -322,7 +322,9 @@ setTimeout(() => {
 
 
 
-
+              } else if ((name1 === "khushi" && name2 === "zade") || (name1 === "zade" && name2 === "khushi")) {
+                result.innerHTML = `Getting naughty bitch? Ain't ur bf shivam? hun`;
+                result.style.color = "red";
 
             } else if ((name1 === "disha" && name2 === "devesh") || (name1 === "devesh" && name2 === "disha")) {
                 result.innerHTML = `0% Compatibility – You guys are siblings for sure! 😱`;
@@ -332,11 +334,8 @@ setTimeout(() => {
                 result.style.color = "blue";
             } else {
                 let relations = [
-                    "Siblings! 😱", 
-                    "Long-lost Cousins! 🤯", 
-                    "Best Friends Only! 😂", 
-                    "Mortal Enemies! 😤", 
-                
+                    "Getting naughty bitch? Ain't ur bf shivam? hun", 
+                   
                 ];
                 let randomRelation = relations[Math.floor(Math.random() * relations.length)];
                 result.innerHTML = `0% Compatibility – You Are Actually ${randomRelation}`;
